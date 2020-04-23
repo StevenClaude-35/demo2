@@ -1,0 +1,52 @@
+<form [formGroup]="crudApi.studentForm">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+        <div class="col-sm-9">
+            <h1 class="add-student" style="color: rgb(255, 0, 0);">Add Student</h1>
+        </div>
+        <div class="col-sm-3"><a routerLink="/students" class="btn btn-info pull-right">
+                <i class="fas fa-list custom-fa--list"></i>List Student</a></div>
+    </nav>
+
+
+    <div class="form-body">
+        <div class="row">
+            <div class="col-md-12 mb3">
+                <label>Matricule:</label>
+                <input type="text" name="mat" formControlName="mat" class="form-control" required
+                    placeholder="Taper votre mat">
+            </div>
+            <div class="col-md-12 mb3">
+                <label>Nom:</label>
+                <input type="text" name="nom" formControlName="nom" class="form-control" required
+                    placeholder="Taper votre nom">
+            </div>
+            <div class="col-md-12 mb3">
+                <label>Classe:</label>
+                <input type="text" name="classe" formControlName="classe" class="form-control" required
+                    placeholder="Taper votre classe">
+            </div>
+            <div class="col-md-12 mb3">
+                <label>Adrese:</label>
+                <input type="text" name="adresse" formControlName="mat" class="form-control" required
+                    placeholder="Taper votre adresse">
+            </div>
+            <div class="col-md-12 mb3">
+                <label>Telephone:</label>
+                <input type="text" name="tel" formControlName="tel" class="form-control" required
+                    placeholder="Taper votre tel">
+            </div>
+            <div class="col-md-12 mb3">
+                <label>Email:</label>
+                <input type="text" name="email" formControlName="email" class="form-control" required
+                    placeholder="Taper votre email">
+            </div>
+            <div class="form-group">
+                <button class="btn btn-success" type="button" (click)="addStudent()"
+                ><i class="fas fa-plus-circle custom-fa-plus-circle"></i>Valider</button>
+                <button class="btn btn-secondary"
+                (click)="resetForm()"><i class="fas fa-undo custom-fa-undo"></i>Reset</button>
+            </div>
+        </div>
+    </div>
+
+</form>

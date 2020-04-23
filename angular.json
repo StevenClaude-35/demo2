@@ -50,9 +50,15 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/@fortawesome/fontawesome-free/css/all.css",
+              "node_modules/ngx-toastr/toastr.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -145,6 +151,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular7Firebae"
+    }
+  },
+  "defaultProject": "angular7Firebae",
+  "cli": {
+    "analytics": "51f58c76-28a5-4ce2-9338-48a5232e92ee"
+  }
 }
